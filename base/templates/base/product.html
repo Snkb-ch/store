@@ -1,0 +1,14 @@
+
+<p>{{product.id}}</p>
+<p>{{product.name}}</p>
+<p>{{product.price}}</p>
+
+{% for related_product in related_products %}
+    <p>{{related_product.id}}</p>
+    <p>{{related_product.name}}</p>
+    <p>{{related_product.price}}</p>
+    <p>{{related_product.category.name}}</p>
+{% endfor %}
+
+
+
